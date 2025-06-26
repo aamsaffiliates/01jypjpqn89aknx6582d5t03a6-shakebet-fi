@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakebet Casino - 200% Bonus €1,500 asti + 10% Viikoittainen Cashback | Suomen Paras Nettikasino</title>
+    <meta name="description" content="Shakebet Casino tarjoaa 200% bonuksen €1,500 asti + 10% viikoittaisen cashbackin. Pelaa Book of Dead, Sweet Bonanza ja tuhansia muita pelejä. Nopeat kotiutukset ja suomalainen asiakaspalvelu.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Shakebet Casino - 200% Bonus €1,500 asti | Suomen Paras Nettikasino">
+    <meta property="og:description" content="Liity Shakebet Casinoon ja saa 200% bonus €1,500 asti + 10% viikoittainen cashback. Tuhansia pelejä ja nopeat kotiutukset.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shakebet.fi">
+    <meta property="og:image" content="https://shakebet.fi/images/hero.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-red': '#fe2a18',
+                        'casino-black': '#0a0a0a',
+                        'casino-yellow': '#fff201',
+                        'casino-white': '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-casino-red text-casino-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-chip chip-1"><i class="fas fa-coins"></i></div>
+        <div class="floating-chip chip-2"><i class="fas fa-gem"></i></div>
+        <div class="floating-chip chip-3"><i class="fas fa-star"></i></div>
+        <div class="floating-explosion explosion-1">💥</div>
+        <div class="floating-explosion explosion-2">⚡</div>
+        <div class="floating-explosion explosion-3">💫</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-casino-black border-b-4 border-casino-yellow mx-4 mt-4 shadow-2xl">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo-container">
+                    <img src="images/logo.png" class="h-24 -my-4" alt="Shakebet FI logo" />
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hero" class="nav-link text-casino-white hover:text-casino-yellow transition-colors duration-300">Etusivu</a>
+                    <a href="#games" class="nav-link text-casino-white hover:text-casino-yellow transition-colors duration-300">Pelit</a>
+                    <a href="#bonuses" class="nav-link text-casino-white hover:text-casino-yellow transition-colors duration-300">Bonukset</a>
+                    <a href="#about" class="nav-link text-casino-white hover:text-casino-yellow transition-colors duration-300">Tietoa</a>
+                    <a href="#support" class="nav-link text-casino-white hover:text-casino-yellow transition-colors duration-300">Tuki</a>
+                </div>
+                <button class="cta-button bg-casino-yellow text-casino-black px-6 py-3 font-bold border-4 border-casino-black hover:transform hover:scale-105 transition-all duration-300" onclick="redirectToRegister()">
+                    REKISTERÖIDY
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="mt-12 min-h-screen flex items-center justify-center pt-24 pb-16 relative overflow-hidden">
+        <div class="parallax-bg"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                
+
+                    <!-- Main Title -->
+                    <h1 class="text-5xl lg:text-7xl font-black mb-6 casino-text-shadow leading-tight">
+                        SHAKEBET<br>
+                        <span class="text-casino-yellow">CASINO</span><br>
+                        <span class="text-3xl lg:text-4xl">SUOMEN KUUMIN PELIPAIKKA</span>
+                    </h1>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="cta-button bg-casino-yellow text-casino-black px-8 py-4 text-xl font-black border-4 border-casino-black hover:transform hover:scale-105 transition-all duration-300" onclick="redirectToRegister()">
+                            ALOITA PELAAMINEN
+                        </button>
+                        <button class="cta-button bg-casino-black text-casino-yellow px-8 py-4 text-xl font-black border-4 border-casino-yellow hover:transform hover:scale-105 transition-all duration-300" onclick="redirectToRegister()">
+                            LUNASTA BONUS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <!-- Bonus Display Box -->
+                    <div class="bonus-box bg-casino-black border-4 border-casino-yellow p-6 mb-4 relative overflow-hidden">
+                        <div class="spotlight-effect"></div>
+                        <div class="text-center">
+                            <h2 class="text-2xl font-black text-casino-yellow mb-2">TERVETULIAISBbonus</h2>
+                            <div class="text-4xl font-black text-casino-white mb-2">200% BONUS</div>
+                            <div class="text-2xl text-casino-yellow">€1,500 ASTI</div>
+                            <div class="text-lg text-casino-white mt-2">+ 10% Viikoittainen Cashback</div>
+                        </div>
+                    </div>
+                    <div class="hero-image-container relative">
+                        <img src="images/hero.png" alt="Shakebet Casino Hero" class="w-full max-w-md mx-auto border-4 border-casino-yellow shadow-2xl">
+                        <div class="floating-icons">
+                            <i class="fas fa-dice floating-icon icon-1"></i>
+                            <i class="fas fa-spade floating-icon icon-2"></i>
+                            <i class="fas fa-heart floating-icon icon-3"></i>
+                            <i class="fas fa-diamond floating-icon icon-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-16 bg-casino-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-yellow casino-text-shadow">KUINKA LUNASTAA BONUS</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="step-card text-center">
+                    <div class="step-icon bg-casino-red border-4 border-casino-yellow w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-plus text-3xl text-casino-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-casino-yellow">1. REKISTERÖIDY</h3>
+                    <p class="text-casino-white">Luo tili muutamassa sekunnissa</p>
+                </div>
+                <div class="step-card text-center">
+                    <div class="step-icon bg-casino-red border-4 border-casino-yellow w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-credit-card text-3xl text-casino-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-casino-yellow">2. TALLETA</h3>
+                    <p class="text-casino-white">Tee ensimmäinen talletuksesi</p>
+                </div>
+                <div class="step-card text-center">
+                    <div class="step-icon bg-casino-red border-4 border-casino-yellow w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-gift text-3xl text-casino-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-casino-yellow">3. SAA BONUS</h3>
+                    <p class="text-casino-white">Bonus hyvitetään automaattisesti</p>
+                </div>
+                <div class="step-card text-center">
+                    <div class="step-icon bg-casino-red border-4 border-casino-yellow w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-play text-3xl text-casino-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-casino-yellow">4. PELAA</h3>
+                    <p class="text-casino-white">Aloita pelaaminen bonusrahalla</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gringo's Picks -->
+    <section id="games" class="py-16 bg-casino-red">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-white casino-text-shadow">GRINGON SUOSIKIT</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="game-card group">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="images/book-of-ra" alt="Book of Ra" class="w-full aspect-[2/3] object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">PELAA</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-2 font-bold text-casino-white">Book of Ra</h3>
+                </div>
+                <div class="game-card group">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="images/candyland.jpg" alt="Candyland" class="w-full aspect-[2/3] object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">PELAA</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-2 font-bold text-casino-white">Candyland</h3>
+                </div>
+                <div class="game-card group">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="images/desert-temple.jpg" alt="Desert Temple" class="w-full aspect-[2/3] object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">PELAA</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-2 font-bold text-casino-white">Desert Temple</h3>
+                </div>
+                <div class="game-card group">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="images/legacy-of-gods.jpg" alt="Legacy of gods" class="w-full aspect-[2/3] object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">PELAA</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-2 font-bold text-casino-white">Legacy of gods</h3>
+                </div>
+                <div class="game-card group">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="images/le-bandit.jpg" alt="Le Bandit" class="w-full aspect-[2/3] object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">PELAA</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-2 font-bold text-casino-white">Le Bandit</h3>
+                </div>
+                <div class="game-card group">
+                    <div class="relative overflow-hidden border-4 border-casino-yellow">
+                        <img src="images/sizzling-hot.jpg" alt="7 Sizzling Hot Deluxe" class="w-full aspect-[2/3] object-cover">
+                        <div class="game-overlay absolute inset-0 bg-casino-black bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="cta-button bg-casino-yellow text-casino-black px-4 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">PELAA</button>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-2 font-bold text-casino-white">7 Sizzling Hot Deluxe</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Portfolio -->
+    <section class="py-16 bg-casino-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-yellow casino-text-shadow">PELIVALIKOIMA</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+                <div class="stat-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <div class="text-3xl font-black text-casino-white mb-2">247</div>
+                    <div class="text-sm text-casino-white">Megaways</div>
+                </div>
+                <div class="stat-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <div class="text-3xl font-black text-casino-white mb-2">156</div>
+                    <div class="text-sm text-casino-white">Cluster Pays</div>
+                </div>
+                <div class="stat-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <div class="text-3xl font-black text-casino-white mb-2">89</div>
+                    <div class="text-sm text-casino-white">Pöytäpelit</div>
+                </div>
+                <div class="stat-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <div class="text-3xl font-black text-casino-white mb-2">34</div>
+                    <div class="text-sm text-casino-white">Crash Pelit</div>
+                </div>
+                <div class="stat-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <div class="text-3xl font-black text-casino-white mb-2">127</div>
+                    <div class="text-sm text-casino-white">Live Dealer</div>
+                </div>
+                <div class="stat-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <div class="text-3xl font-black text-casino-white mb-2">67</div>
+                    <div class="text-sm text-casino-white">Jackpotit</div>
+                </div>
+                <div class="stat-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <div class="text-3xl font-black text-casino-white mb-2">298</div>
+                    <div class="text-sm text-casino-white">Suomi Exclusive</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-casino-red">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-white casino-text-shadow">TIETOA SHAKEBET CASINOSTA</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-casino-black border-4 border-casino-yellow p-8 mb-8">
+                    <p class="text-lg text-casino-white leading-relaxed mb-6">
+                        Shakebet Casino on Suomen pelimarkkinoille räjähtänyt uusi toimija, joka tarjoaa pelaajille ainutlaatuisen pelielämyksen. Kasino on suunniteltu erityisesti suomalaisille pelaajille, ja se yhdistää modernin teknologian perinteiseen kasinokokemukseen. Shakebet tarjoaa laajan valikoiman pelejä maailman johtavilta pelintarjoajilta, mukaan lukien NetEnt, Microgaming, Play'n GO, Pragmatic Play ja monet muut.
+                    </p>
+                    <p class="text-lg text-casino-white leading-relaxed mb-6">
+                        Kasinon pelivalikoima sisältää yli 2000 peliä, joista löytyy klassisia hedelmäpelejä, moderneja videokolikkoja, pöytäpelejä, live-kasinoa ja jännittäviä jackpot-pelejä. Erityisesti suomalaiset pelaajat arvostavat kasinon nopeita kotiutuksia, jotka toteutuvat usein jo muutamassa tunnissa. Shakebet on myös tunnettu anteliaista bonuksistaan ja säännöllisistä kampanjoistaan, jotka pitävät pelaamisen mielenkiintoisena pitkään.
+                    </p>
+                    <p class="text-lg text-casino-white leading-relaxed">
+                        Turvallisuus on Shakebetissä etusijalla. Kasino toimii Anjouan Gaming -lisenssin alaisuudessa ja käyttää SSL-salausta kaikkien tiedonsiirtojen suojaamiseksi. Asiakaspalvelu on saatavilla suomeksi ympäri vuorokauden, ja pelaajat voivat ottaa yhteyttä live-chatin, sähköpostin tai puhelimen kautta. Vastuullinen pelaaminen on myös tärkeä osa kasinon toimintaa, ja pelaajat voivat asettaa erilaisia pelirajoituksia tilillään.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Providers -->
+    <section class="py-16 bg-casino-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-yellow casino-text-shadow">PELINTARJOAJAT</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">NetEnt</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Microgaming</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Play'n GO</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Pragmatic Play</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Evolution Gaming</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Yggdrasil</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Big Time Gaming</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Quickspin</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Red Tiger</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Thunderkick</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Push Gaming</div>
+                </div>
+                <div class="provider-card bg-casino-red border-2 border-casino-yellow p-4 text-center">
+                    <div class="text-casino-white font-bold">Nolimit City</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-16 bg-casino-red">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-white casino-text-shadow">MAKSUTAVAT</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-casino-black border-4 border-casino-yellow p-8 mb-8">
+                    <p class="text-lg text-casino-white leading-relaxed mb-6">
+                        Shakebet Casino tarjoaa suomalaisille pelaajille kattavan valikoiman turvallisia ja nopeita maksutapoja. Kasino on erikoistunut erityisesti suomalaisten suosimiin maksumenetelmiin, mikä tekee talletuksista ja kotiutuksista sujuvaa. Kaikki maksutapahtumat on suojattu 256-bittisellä SSL-salauksella, ja kasino noudattaa tiukkoja tietosuojastandardeja.
+                    </p>
+                    <p class="text-lg text-casino-white leading-relaxed">
+                        Talletukset käsitellään välittömästi, ja kotiutukset toteutuvat yleensä 1-24 tunnin sisällä riippuen valitusta maksutavasta. Kasino ei veloita maksuja talletuksista tai kotiutuksista, mutta pelaajan oma pankki saattaa veloittaa omia kulujaan. Minimitalletussumma on 10€ ja maksimi kotiutussumma 5000€ per päivä.
+                    </p>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-casino-black border-4 border-casino-yellow">
+                        <thead>
+                            <tr class="bg-casino-yellow text-casino-black">
+                                <th class="p-4 text-left font-bold">Maksutapa</th>
+                                <th class="p-4 text-left font-bold">Talletus</th>
+                                <th class="p-4 text-left font-bold">Kotiutus</th>
+                                <th class="p-4 text-left font-bold">Käsittelyaika</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-casino-white">
+                            <tr class="border-b border-casino-yellow">
+                                <td class="p-4">Nordea</td>
+                                <td class="p-4">10€ - 5000€</td>
+                                <td class="p-4">20€ - 5000€</td>
+                                <td class="p-4">Välitön / 1-2h</td>
+                            </tr>
+                            <tr class="border-b border-casino-yellow">
+                                <td class="p-4">Danske Bank</td>
+                                <td class="p-4">10€ - 5000€</td>
+                                <td class="p-4">20€ - 5000€</td>
+                                <td class="p-4">Välitön / 1-2h</td>
+                            </tr>
+                            <tr class="border-b border-casino-yellow">
+                                <td class="p-4">OP-Pohjola</td>
+                                <td class="p-4">10€ - 5000€</td>
+                                <td class="p-4">20€ - 5000€</td>
+                                <td class="p-4">Välitön / 1-2h</td>
+                            </tr>
+                            <tr class="border-b border-casino-yellow">
+                                <td class="p-4">Trustly</td>
+                                <td class="p-4">10€ - 5000€</td>
+                                <td class="p-4">20€ - 5000€</td>
+                                <td class="p-4">Välitön / Välitön</td>
+                            </tr>
+                            <tr class="border-b border-casino-yellow">
+                                <td class="p-4">MobilePay</td>
+                                <td class="p-4">10€ - 1000€</td>
+                                <td class="p-4">-</td>
+                                <td class="p-4">Välitön</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">Visa/Mastercard</td>
+                                <td class="p-4">10€ - 5000€</td>
+                                <td class="p-4">20€ - 5000€</td>
+                                <td class="p-4">Välitön / 1-3 pv</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP -->
+    <section class="py-16 bg-casino-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-yellow casino-text-shadow">TURVALLISUUS & VIP-OHJELMA</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-casino-red border-4 border-casino-yellow p-8 mb-8">
+                    <p class="text-lg text-casino-white leading-relaxed mb-6">
+                        Shakebet Casino on sitoutunut tarjoamaan pelaajilleen turvallisen ja luotettavan peliympäristön. Kasino toimii Anjouan Gaming -lisenssin alaisuudessa, mikä takaa tiukat säännökset ja valvonnan. Kaikki pelaajatiedot suojataan 256-bittisellä SSL-salauksella, ja kasino käyttää kehittyneitä palomuureja ja tietoturvajärjestelmiä suojatakseen pelaajien henkilökohtaiset ja taloudelliset tiedot.
+                    </p>
+                    <p class="text-lg text-casino-white leading-relaxed">
+                        VIP-ohjelma on suunniteltu palkitsemaan kasinon uskollisimpia pelaajia. Ohjelma koostuu viidestä tasosta: Pronssi, Hopea, Kulta, Platina ja Timantti. Jokainen taso tarjoaa ainutlaatuisia etuja, kuten korkeampia kotiutusrajoja, henkilökohtaista asiakaspalvelua, eksklusiivisia bonuksia ja kutsuja erityistapahtumiin. VIP-pelaajat nauttivat myös nopeammista kotiutuksista ja räätälöidyistä kampanjoista, jotka on suunniteltu heidän pelitottumustensa mukaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses -->
+    <section id="bonuses" class="py-16 bg-casino-red">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-white casino-text-shadow">BONUKSET JA KAMPANJAT</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-casino-black border-4 border-casino-yellow p-8 mb-8">
+                    <p class="text-lg text-casino-white leading-relaxed mb-6">
+                        Shakebet Casino tarjoaa markkinoiden anteliaimpiin kuuluvan tervetuliaisbonuksen, joka antaa uusille pelaajille 200% bonuksen ensimmäisestä talletuksesta €1,500 asti. Tämän lisäksi kaikki pelaajat saavat 10% viikoittaisen cashbackin, joka lasketaan viikon häviöistä ja hyvitetään automaattisesti joka maanantai. Bonusrahoja voi käyttää kaikkiin kasinon peleihin, ja kierrätysvaatimus on kohtuullinen 35x bonussummalle.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-casino-yellow mb-4">Bonusehdot:</h3>
+                    <ul class="list-disc list-inside text-casino-white mb-6 space-y-2">
+                        <li>Tervetuliaisbonus: 200% €1,500 asti + 10% viikoittainen cashback</li>
+                        <li>Kierrätysvaatimus: 35x bonussumma</li>
+                        <li>Maksimi panos bonusrahalla: €5 per pyöräytys</li>
+                        <li>Bonuksen voimassaoloaika: 30 päivää aktivoinnista</li>
+                        <li>Cashback hyvitetään automaattisesti joka maanantai</li>
+                        <li>Ei rajoituksia pelivalikoimaan bonusrahalla</li>
+                    </ul>
+                    
+                    <p class="text-lg text-casino-white leading-relaxed">
+                        Säännölliset kampanjat pitävät pelaamisen mielenkiintoisena. Kasino järjestää viikoittaisia turnauksia, kuukausittaisia reload-bonuksia ja erityiskampanjoita suurimpien pelitapahtumien aikaan. VIP-pelaajat saavat eksklusiivisia bonuksia ja henkilökohtaisia tarjouksia. Kaikki bonukset ovat läpinäkyviä, eikä piilotettuja ehtoja ole. Pelaajat voivat aina tarkistaa bonustensa tilan ja kierrätysvaatimukset tilinsä kautta.
+                    </p>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-casino-black border-4 border-casino-yellow">
+                        <thead>
+                            <tr class="bg-casino-yellow text-casino-black">
+                                <th class="p-4 text-left font-bold">Bonus</th>
+                                <th class="p-4 text-left font-bold">Summa</th>
+                                <th class="p-4 text-left font-bold">Kierrätys</th>
+                                <th class="p-4 text-left font-bold">Voimassa</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-casino-white">
+                            <tr class="border-b border-casino-yellow">
+                                <td class="p-4">Tervetuliaisbonus</td>
+                                <td class="p-4">200% €1,500 asti</td>
+                                <td class="p-4">35x</td>
+                                <td class="p-4">30 päivää</td>
+                            </tr>
+                            <tr class="border-b border-casino-yellow">
+                                <td class="p-4">Viikoittainen Cashback</td>
+                                <td class="p-4">10% häviöistä</td>
+                                <td class="p-4">Ei kierrätystä</td>
+                                <td class="p-4">Jatkuva</td>
+                            </tr>
+                            <tr class="border-b border-casino-yellow">
+                                <td class="p-4">Reload Bonus</td>
+                                <td class="p-4">50% €500 asti</td>
+                                <td class="p-4">30x</td>
+                                <td class="p-4">14 päivää</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">VIP Bonus</td>
+                                <td class="p-4">Henkilökohtainen</td>
+                                <td class="p-4">25x</td>
+                                <td class="p-4">60 päivää</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-16 bg-casino-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-yellow casino-text-shadow">ASIAKASPALVELU</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="support-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <i class="fas fa-comments text-4xl text-casino-yellow mb-4"></i>
+                    <h3 class="text-xl font-bold text-casino-white mb-2">Live Chat</h3>
+                    <p class="text-casino-white">24/7 suomenkielinen tuki</p>
+                </div>
+                <div class="support-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <i class="fas fa-envelope text-4xl text-casino-yellow mb-4"></i>
+                    <h3 class="text-xl font-bold text-casino-white mb-2">Sähköposti</h3>
+                    <p class="text-casino-white">tuki@shakebet.fi</p>
+                </div>
+                <div class="support-card bg-casino-red border-4 border-casino-yellow p-6 text-center">
+                    <i class="fas fa-phone text-4xl text-casino-yellow mb-4"></i>
+                    <h3 class="text-xl font-bold text-casino-white mb-2">Puhelin</h3>
+                    <p class="text-casino-white">+358 9 123 4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-16 bg-casino-red">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-white casino-text-shadow">MUUT KAMPANJAT</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="promo-card bg-casino-black border-4 border-casino-yellow p-6">
+                    <h3 class="text-2xl font-bold text-casino-yellow mb-4">Viikoittainen Turnaus</h3>
+                    <p class="text-casino-white mb-4">Kilpaile muita pelaajia vastaan ja voita osuutesi 10,000€ palkintopotista. Turnaus järjestetään joka viikko eri pelissä.</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">OSALLISTU</button>
+                </div>
+                <div class="promo-card bg-casino-black border-4 border-casino-yellow p-6">
+                    <h3 class="text-2xl font-bold text-casino-yellow mb-4">Kuukauden Peli</h3>
+                    <p class="text-casino-white mb-4">Pelaa kuukauden valittua peliä ja saa tupla pisteitä VIP-ohjelmaan. Tämän kuun peli: Book of Dead.</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">PELAA NYT</button>
+                </div>
+                <div class="promo-card bg-casino-black border-4 border-casino-yellow p-6">
+                    <h3 class="text-2xl font-bold text-casino-yellow mb-4">Ystävien Suosittelu</h3>
+                    <p class="text-casino-white mb-4">Suosittele Shakebettiä ystävällesi ja saa 50€ bonus kun he tekevät ensimmäisen talletuksensa. Ei rajaa suosituksille!</p>
+                    <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black" onclick="redirectToRegister()">SUOSITTELE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="py-16 bg-casino-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-yellow casino-text-shadow">ERIKOISOMINAISUUDET</h2>
+            <div class="grid lg:grid-cols-1 gap-12">
+                <div class="feature-card max-w-xl mx-auto">
+                    <div class="bg-casino-red border-4 border-casino-yellow p-8">
+                        <div class="flex items-center mb-6">
+                            <img src="images/paynplay.png" alt="Pay N Play" class="w-16 h-16 mr-4 border-2 border-casino-yellow">
+                            <h3 class="text-3xl font-bold text-casino-white">Pay N Play</h3>
+                        </div>
+                        <p class="text-lg text-casino-white leading-relaxed">
+                            Aloita pelaaminen välittömästi ilman rekisteröitymistä! Pay N Play -teknologia mahdollistaa nopean pääsyn peleihin suoraan pankkitunnuksillasi. Tee talletus, ja tilisi luodaan automaattisesti. Kotiutukset tapahtuvat samalle tilille muutamassa minuutissa.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Licensing -->
+    <section class="py-16 bg-casino-red">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-white casino-text-shadow">LUOTETTAVUUS JA LISENSOINTI</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <div class="trust-badge bg-casino-black border-4 border-casino-yellow p-6 text-center">
+                    <i class="fas fa-certificate text-4xl text-casino-yellow mb-2"></i>
+                    <div class="text-casino-white font-bold">Anjouan Gaming</div>
+                    <div class="text-casino-white text-sm">Lisenssi</div>
+                </div>
+                <div class="trust-badge bg-casino-black border-4 border-casino-yellow p-6 text-center">
+                    <i class="fas fa-shield-alt text-4xl text-casino-yellow mb-2"></i>
+                    <div class="text-casino-white font-bold">SSL Salaus</div>
+                    <div class="text-casino-white text-sm">256-bit</div>
+                </div>
+                <div class="trust-badge bg-casino-black border-4 border-casino-yellow p-6 text-center">
+                    <i class="fas fa-random text-4xl text-casino-yellow mb-2"></i>
+                    <div class="text-casino-white font-bold">RNG Testattu</div>
+                    <div class="text-casino-white text-sm">Reilut pelit</div>
+                </div>
+                <div class="trust-badge bg-casino-black border-4 border-casino-yellow p-6 text-center">
+                    <i class="fas fa-user-shield text-4xl text-casino-yellow mb-2"></i>
+                    <div class="text-casino-white font-bold">Vastuullinen</div>
+                    <div class="text-casino-white text-sm">Pelaaminen</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-casino-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-12 text-casino-yellow casino-text-shadow">USEIN KYSYTYT KYSYMYKSET</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow">
+                    <div class="faq-question p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <h3 class="text-xl font-bold text-casino-white flex justify-between items-center">
+                            Kuinka nopeasti kotiutukset käsitellään?
+                            <i class="fas fa-chevron-down text-casino-yellow"></i>
+                        </h3>
+                    </div>
+                    <div class="faq-answer p-6 pt-0 hidden">
+                        <p class="text-casino-white">Kotiutukset käsitellään yleensä 1-24 tunnin sisällä riippuen valitusta maksutavasta. Trustly-kotiutukset ovat välittömiä, kun taas pankkisiirrot voivat kestää 1-3 arkipäivää.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow">
+                    <div class="faq-question p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <h3 class="text-xl font-bold text-casino-white flex justify-between items-center">
+                            Onko tervetuliaisbonus pakollinen?
+                            <i class="fas fa-chevron-down text-casino-yellow"></i>
+                        </h3>
+                    </div>
+                    <div class="faq-answer p-6 pt-0 hidden">
+                        <p class="text-casino-white">Ei, tervetuliaisbonus ei ole pakollinen. Voit valita rekisteröityessäsi, haluatko ottaa bonuksen vastaan vai pelata ilman bonusta. Voit myös ottaa yhteyttä asiakaspalveluun bonuksen poistamiseksi.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow">
+                    <div class="faq-question p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <h3 class="text-xl font-bold text-casino-white flex justify-between items-center">
+                            Voinko pelata mobiililaitteella?
+                            <i class="fas fa-chevron-down text-casino-yellow"></i>
+                        </h3>
+                    </div>
+                    <div class="faq-answer p-6 pt-0 hidden">
+                        <p class="text-casino-white">Kyllä! Shakebet Casino on täysin optimoitu mobiililaitteille. Voit pelata kaikkia pelejä suoraan selaimessa ilman erillistä sovellusta. Sivusto toimii sujuvasti kaikilla älypuhelimilla ja tableteilla.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-casino-red border-4 border-casino-yellow">
+                    <div class="faq-question p-6 cursor-pointer" onclick="toggleFaq(this)">
+                        <h3 class="text-xl font-bold text-casino-white flex justify-between items-center">
+                            Kuinka voin asettaa pelirajoituksia?
+                            <i class="fas fa-chevron-down text-casino-yellow"></i>
+                        </h3>
+                    </div>
+                    <div class="faq-answer p-6 pt-0 hidden">
+                        <p class="text-casino-white">Voit asettaa pelirajoituksia tilisi asetuksista. Voit rajoittaa talletuksia, häviöitä, peliaikaa tai asettaa tilin jäädytykseen. Rajoitukset astuvat voimaan välittömästi ja niitä voi tiukentaa milloin tahansa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-casino-black border-t-4 border-casino-yellow py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="/"><img src="images/logo.png" class="h-24" alt="Shakebet logo" /></a>
+                    <p class="text-casino-white">Suomen kuumin nettikasino</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-casino-yellow mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-casino-white">
+                        <li>Kolikkopelit</li>
+                        <li>Pöytäpelit</li>
+                        <li>Live Casino</li>
+                        <li>Jackpotit</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-casino-yellow mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-casino-white">
+                        <li>Live Chat 24/7</li>
+                        <li>tuki@shakebet.fi</li>
+                        <li>+358 9 123 4567</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-casino-yellow mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-casino-white">
+                        <li><i class="fas fa-exclamation-triangle text-casino-yellow mr-2"></i>Peliklinikka: 0800 100 101</li>
+                        <li><i class="fas fa-shield-alt text-casino-yellow mr-2"></i>Pelirajoitukset</li>
+                        <li><i class="fas fa-clock text-casino-yellow mr-2"></i>Itsesulku</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-casino-yellow pt-8">
+                <div class="text-center text-casino-white">
+                    <p class="mb-4">
+                        <i class="fas fa-exclamation-triangle text-casino-yellow mr-2"></i>
+                        Uhkapelaaminen voi olla riippuvuutta aiheuttavaa. Pelaa vastuullisesti. Tarkista onko uhkapelaaminen laillista alueellasi. 18+
+                    </p>
+                    <p class="text-sm">
+                        © 2024 Shakebet Casino. Kaikki oikeudet pidätetään. Lisensoitu Anjouan Gaming toimesta.
+                    </p>
+                    <div class="mt-4">
+                        <button class="cta-button bg-casino-yellow text-casino-black px-6 py-2 font-bold border-2 border-casino-black mr-4" onclick="redirectToRegister()">
+                            KIRJAUDU SISÄÄN
+                        </button>
+                        <button class="cta-button bg-casino-red text-casino-white px-6 py-2 font-bold border-2 border-casino-yellow" onclick="redirectToRegister()">
+                            REKISTERÖIDY
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Redirect to register function
+        function redirectToRegister() {
+            window.location.href = '/register';
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.parallax-bg');
+            if (parallax) {
+                parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
